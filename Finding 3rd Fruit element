@@ -1,0 +1,11 @@
+import org.openqa.selenium.By;
+
+public class FoodItemPage
+{
+	public static void fruitElement()
+   {    
+		String ngBinding = driver.findElement(By.cssSelector("span.title ng-binding:nth-of-type(3)")).getText();
+		fruitElement=ngBinding.substring(51,ngBinding.length()-7);
+		System.out.println("The third item on the list is: "fruitElement);
+   }
+}
